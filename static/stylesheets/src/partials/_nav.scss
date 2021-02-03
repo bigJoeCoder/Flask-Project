@@ -1,0 +1,30 @@
+nav {
+    background-color: $primary-color;
+    height: 50px;
+    $color: $secondary-color;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0;
+    padding: 0 2em;
+}
+
+nav ul {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding-left: 1em;
+    color: $secondary-color;
+}
+
+nav span {
+    font-size: 1.6rem;
+    color: $secondary-color;
+    font-weight: 800;
+}
