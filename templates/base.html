@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/css/style.css') }}">
+    <script src="{{ url_for('static', filename='scripts/js/script.js') }}" defer></script>
+</head>
+<body>
+    {% include 'partials/nav.html' %}
+    {% block content %}
+    {% endblock %}
+    {% include 'partials/footer.html' %}
+</body>
+</html>
